@@ -2,4 +2,4 @@
 
 $container = $jedi->getContainer();
 
-$container->set('MyClass');
+$container->set('Models\MainModel');

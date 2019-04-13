@@ -1,5 +1,7 @@
 <?php
 
-return [
-    'a' => 'MyClass'
-];
+//return [
+//    'autoload' => [
+//        'Models\\' => 'src/Models/MainModel.php',
+//    ]
+//];

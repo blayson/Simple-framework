@@ -1,12 +1,14 @@
 <?php
+define('MODELS', str_replace('public/index.php', 'src/Models', $_SERVER['SCRIPT_FILENAME']));
 
+require_once '../vendor/autoload.php';
 
-require_once '../Jedi/App.php';
-require_once '../Jedi/DIContainer.php';
-
-$container = new Jedi\DIContainer();
-$jedi = new Jedi\App($container);
+$container = new Jedi\DIContainer;
+$jedi      = new Jedi\App($container);
 
 require_once '../settings/dependency.php';
 
-$jedi->container();
+require_once '../settings/route.php';
+
+//$jedi->container();
+$jedi->run();
