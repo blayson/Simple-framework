@@ -1,5 +1,8 @@
 ***
-# Simple framework \[WIP] 
+# Simple php framework
+
+## Vendor
+Folder with my framework source code
 
 ## Dependency Injection
 Use file `dependency.php` to set dependencies to DI container
